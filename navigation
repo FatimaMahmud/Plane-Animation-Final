@@ -9,10 +9,18 @@
     animation: mymove 5s infinite;
 }
 
+:target{
+ transform: translate(1000px,1000px);
+}
+
+#button{
+transform: translate(1000px,1000px);
+}
+
 @keyframes down
 {
     from {
-        left: 0;
+        left: 20%;
     }
     to {
         left: 50%;
@@ -31,7 +39,7 @@
     width: 2000px;
     height: 1000px;
     background-image: url("http://daintryjensen.com/wp-content/uploads/2015/03/clouds-seamless-background-824.jpg");
-            animation: play .8s steps(10) infinite;
+           animation: play .8s steps(10) infinite;
 }
 
 
@@ -40,25 +48,23 @@
      to { background-position: -500px; }
 }
 
-button.down {}
-button.down:active {
- animation: play .20s steps(10) infinite;
-}
+
 </style>
 </head>
 
 
 <body>
-<div class = "images"></div>
+<div class = "images">
+<button ><a href="#" id= "button" >up</a></button>
+<button >down</button>
+<button >left</button>
+<button >right</button></div>
 
 <div class = "bird" >
  	<img src="http://gallery.yopriceville.com/downloadfullsize/send/1803" style="position: absolute; top: 30px; left: 70px;"/>
 </div>
 
-<button class="up">up</button>
-<button class="down">down</button>
-<button class="left">left</button>
-<button class="right">right</button>
+
 
 
 </body>
