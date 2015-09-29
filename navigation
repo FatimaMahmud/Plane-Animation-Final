@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.bird {
+    width: 100px;
+    height: 100px;
+    position :absolute;
+    animation: mymove 5s infinite;
+}
+
+@keyframes down
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 30px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+.images {
+    width: 2000px;
+    height: 1000px;
+    background-image: url("http://daintryjensen.com/wp-content/uploads/2015/03/clouds-seamless-background-824.jpg");
+            animation: play .8s steps(10) infinite;
+}
+
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -500px; }
+}
+
+button.down {}
+button.down:active {
+ animation: play .20s steps(10) infinite;
+}
+</style>
+</head>
+
+
+<body>
+<div class = "images"></div>
+
+<div class = "bird" >
+ 	<img src="http://gallery.yopriceville.com/downloadfullsize/send/1803" style="position: absolute; top: 30px; left: 70px;"/>
+</div>
+
+<button class="up">up</button>
+<button class="down">down</button>
+<button class="left">left</button>
+<button class="right">right</button>
+
+
+</body>
+
+</html>
+
